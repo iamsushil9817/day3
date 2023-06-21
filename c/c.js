@@ -16,17 +16,29 @@
 // a.enroll();
 // a.email="sushil123@mail.com"
 // console.log(a)
-function createa(){
-    return {
-        fname:"sushil",
-        lname:"bhandri",
-        age:21,
-        enroll : () => {
-            console.log("you are successfuly enrolled");
-        },
-    } 
+// function createa(age){
+//     return {
+//         // fname:"sushil",
+//         // lname:"bhandri",
+//         age: age,
+//         enroll : () => {
+//             console.log("you are successfuly enrolled");
+//         },
+//     } 
      
+// }
+
+// const a = createa(23);
+// a.enroll();
+// console.log(a) 
+
+// constructor
+function Course(title){
+    this.title = title,
+    this.Enroll=function(){
+        console.log("you are successfuly enrolled");
+    }
 }
 
-const a = createa();
-a.enroll();
+const course =  new Course("java");
+course.Enroll()
